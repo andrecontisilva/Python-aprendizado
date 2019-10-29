@@ -26,7 +26,7 @@ def d10():
 
 # Dados e dificuldade:
 dados = int(input("Quantidade de dados: "))  # Define quantos d10 serão lançados
-# dificuldade = int(input("Dificuldade: "))  # Define a dificuldade da jogada.
+dificuldade = int(input("Dificuldade: "))  # Define a dificuldade da jogada.
 # TODO: 1) Definir sucesso/falha conforme valor de dificuldade
 # TODO: 2) Excluir sucessos conforme número de falhas críticas (valor_d10 == 1)
 
@@ -34,6 +34,9 @@ dados = int(input("Quantidade de dados: "))  # Define quantos d10 serão lançad
 jogadas = [d10() for jogada in range(dados)]  # Insere todas as jogadas de d10 em uma lista
 print(f"{len(jogadas)}d10:{jogadas}")  # Exibe o número de dados e os valores da lista
 
+sucessos = filter(lambda jogada: jogada >= dificuldade, jogadas)
+print(f"Sucessos: {list(sucessos)}")
+# TODO: Ver finalzinha da aula 62 do curso de Python (Filter()), para usar juntamente com Map()
 
 """
 -- AREA DE TESTES --
