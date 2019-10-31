@@ -3,6 +3,8 @@ Primeiro script em Python para aprendizado.
 -*- coding: utf-8 -*-
 """
 
+from random import random
+
 var1 = "Hello Muthafucka!"
 var2 = "Fala aê feladapúlta"
 
@@ -26,3 +28,7 @@ for num in range(2, 12, 2):
 # List Comprehension
 amigos = ["huguinho, zezinho, luizinho"]
 print([amigo.title() for amigo in amigos])
+
+# Testando round() com random():
+for i in range(50):
+    print(round(random() * 10))
