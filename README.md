@@ -1,3 +1,3 @@
 # Python-aprendizado
 
-Códigos para teste e aprendizado de Python.
+Códigos em Python 3, para aprendizado e referência.
